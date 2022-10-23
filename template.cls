@@ -25,7 +25,7 @@
 
 % Set main fonts
 \usepackage{fontspec}
-\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
+\setmainfont[Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
 
 % Date command
@@ -82,3 +82,9 @@ Last Updated on \today
 \vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
+% Defining a beautiful green
+%\usepackage{xcolor}
+%\definecolor{beautifulgreen}{HTML}{087038}
+
+%Making the hyperlinks a beautiful green
+%\usepackage[colorlinks = true, allcolors = beautifulgreen]{hyperref}
