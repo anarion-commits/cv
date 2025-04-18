@@ -45,7 +45,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\documentclass[]{template}
+\documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
  
 \pagestyle{fancy}
@@ -65,7 +65,7 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Alexandre}{Bogdanov}{ \urlstyle{same}\href{https://www.datascienceportfol.io/alexandresbogdanov}{datascienceportfol.io/alexandresbogdanov}|+44(0)7938824596 |\\
+\namesection{Alexandre}{Bogdanov}{+44(0)7938824596 \\
  \href{mailto:alexandre.s.bogdanov@gmail.com}{alexandre.s.bogdanov@gmail.com}
 }
 
@@ -83,7 +83,6 @@
 
 \section{Links}
 
-Portfolio:// \href{https://datascienceportfol.io/alexandresbogdanov}{\bf datascienceportfol.io} \\
 Linkedin:// \href{https://www.linkedin.com/in/alexandre-bogdanov-0a9b0b44/}{\bf alexbogdanov} \\ 
 Github:// \href{https://github.com/anarion-commits}{\bf anarion-commits} \\
 
@@ -112,13 +111,13 @@ Github:// \href{https://github.com/anarion-commits}{\bf anarion-commits} \\
 
 \section{Courses}
 \href{https://www.coursera.org/learn/bayesian-statistics}{Bayesian Statistics: From Concept to Data Analysis (Coursera, University of California, Santa Cruz)}\\
-\vspace{1.5mm} % Hacky fix for awkward extra vertical space
-\href{https://www.coursera.org/professional-certificates/ibm-data-science}{IBM Data Science Professional Certificate (Coursera, ibm.com)}\\
-\vspace{1.5mm} % Hacky fix for awkward extra vertical space
+% \vspace{1.5mm} % Hacky fix for awkward extra vertical space
+% \href{https://www.coursera.org/professional-certificates/ibm-data-science}{IBM Data Science Professional Certificate (Coursera, ibm.com)}\\
+% \vspace{1.5mm} % Hacky fix for awkward extra vertical space
 \href{https://www.codecademy.com/learn/learn-sql}{Learn SQL (Codecademy)} \\
-\vspace{1.5mm} % Hacky fix for awkward extra vertical space
+% \vspace{1.5mm} % Hacky fix for awkward extra vertical space
 \href{https://www.codecademy.com/learn/sql-table-transformation}{SQL: Table Transformation (Codecademy)} \\
-\vspace{1.5mm} % Hacky fix for awkward extra vertical space
+% \vspace{1.5mm} % Hacky fix for awkward extra vertical space
 \sectionsep
 
 
@@ -152,6 +151,7 @@ CSS \textbullet{}
 %     AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Awards}
+\textbf{Tech Brilliancy prize} - awarded in internal LBG hackathon for co-developing a foundational model-powered tool that improves Jira ticket generation\\
 \textbf{Howard Stockley award} - awarded by 6th Form for the best academic results of the year\\ 
 %- awarded by 6th Form for the best academic results of that year\\
 \textbf{Gold CREST award} - obtained as part of the Engineering Education Scheme
@@ -181,28 +181,42 @@ Powerlifting \textbullet{} Bodybuilding \textbullet{} Reading \textbullet{} Ches
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experience}
-\runsubsection{Lloyds Banking Group (in partnership with Kubrick Group)}
-\descript{| Data Scientist }
-\location{Jan 2021 - Present | London, UK}
+\runsubsection{Lloyds Banking Group}
+\descript{Senior Data \& AI Scientist}
+\location{Mar 2025 - Apr 2025 | London, UK}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Developed \& assisted in productionisation of pricing model that predicts customer demand for personal loan products.
-\item Leveraged knowledge of Agile Framework to deliver fortnightly value-driving updates to stakeholders on progress in model experimentation.
-\item Co-lead the statistics guild, regularly giving talks on interesting statistical concepts in order to foster a more statistics-oriented culture within the department and bank as a whole.
-\item Led a team in a company hackathon that 'nowcasted' how many people in New York will be cycling on any given day. This analysis was consequently used for scenario analysis, based on potential climate outcomes.
-\item Tech used: scikit-learn, scipy, numpy, pandas, Vertex AI, BigQuery, Jenkins, git, Pycharm, SQL, Python.
-\end{tightemize}
-\sectionsep
+\item{Technical lead for an ongoing content generation platform powered by Gemini and Imagen (Google’s foundation models), supporting LBG’s marketing teams in ad creation.}
 
-\runsubsection{Kubrick Group}
-\descript{| Machine Learning Engineer }
-\location{Sep 2020 – Present | London, UK}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\item{Built the full pipeline and frontend, own the tech backlog, and present progress to senior stakeholders.}
+
+\item{Currently working on productionization within enterprise GCP, including CI/CD, Docker, Terraform, service accounts, and platform tuning.}
+
+
+\item{Mentor and reviewer across LBG’s AI Rapid Innovation Squad (AIRIS), supporting the rapid prototyping of generative AI solutions and advising on architectural best practices, viewed by hundreds of internal practitioners.}
+
+\item{Regularly conduct model reviews, as part of Modelling Chapter, for colleagues to ensure alignment with best practices, including a recent insurance model for critical illness application triage.}
+\end{tightemize}
+
+
+
+\runsubsection{Lloyds Banking Group}
+\descript{Senior Data Scientist}
+\location{Jan 2023 - Mar 2025 | London, UK}
 \begin{tightemize}
-\item Underwent an intense 15-week training at Kubrick Group, during which I gained knowledge and real-world experience with applying rigorous statistical data analysis and machine learning to diverse datasets ranging from unstructured text to large volumes of transactional data. To complement my data science skills, I was also provided with a foundation in relevant data technologies to build solutions.
-\item Conducted sentiment analysis of listed companies' financial statements to predict subsequent stock performance. 
-\item Developed a Random Forest model to predict customer churn in a hypothetical bank.
-\item Tech used: Python, scikit-learn, numpy, pandas, pytorch, flask, AWS, Docker, Spark, spaCy, SQL.
+\item Productionised and handled all regulatory \& risk review interactions for a mortgages acquisition model that forecasts product-level application volumes, improving predictive accuracy by ~50\% (MAPE) over prior benchmarks.
+\item As part of internal Modelling Chapter, authored organization-wide guidelines for regression, clustering, time series, exploratory data analysis, and fairness, now used as a standard reference by teams across the bank.
+\item Tech lead on a research-heavy credit card vulnerability forecasting project, using Bayesian hierarchical models and Temporal Fusion Transformers (TFTs).
+\item Lead the internal Statistics Guild, promoting rigorous statistical thinking across the organization through monthly talks and a book club. Topics I’ve presented include Bayesian neural networks, RL, bootstrapping, and model observability.
+\end{tightemize}
+
+\runsubsection{Kubrick Group (in partnership with Lloyds Banking Group)}
+\descript{| Data Scientist }
+\location{Sep 2020 - Jan 2023 | London, UK}
+\begin{tightemize}
+\item Developed a personal loans pricing model, now used across all personal loan applications at LBG. As data scientist, I extended the core methodology to new brands, built robust backtesting frameworks, and handled all regulatory and risk review interactions.
+\item Leveraged knowledge of Agile Framework to deliver fortnightly value-driving updates to stakeholders on progress in model experimentation.
+% \item Tech used: scikit-learn, scipy, numpy, pandas, Vertex AI, BigQuery, Jenkins, git, Pycharm, SQL, Python.
 \end{tightemize}
 \sectionsep
 
@@ -210,10 +224,9 @@ Powerlifting \textbullet{} Bodybuilding \textbullet{} Reading \textbullet{} Ches
 \descript{| Finance Executive }
 \location{Sep. 2019 – Sep. 2020 | London, UK}
 \begin{tightemize}
-\item Had full management of the accounts receivable process, including billing and collections.
 \item Automated parts of the invoicing process through Python, resulting in time efficiency savings of \textasciitilde30\%.
 \item Provided key support with the management of the yearly statutory audit.
-\item Tech used: Python, NetSuite, Salesforce.
+% \item Tech used: Python, NetSuite, Salesforce.
 \end{tightemize}
 \sectionsep
 
@@ -221,14 +234,10 @@ Powerlifting \textbullet{} Bodybuilding \textbullet{} Reading \textbullet{} Ches
 \descript{| Masters' Research}
 \location{Sep. 2018 – Jul. 2019 | Coventry, UK}
 \begin{tightemize}
-\item Used the autocorrelation function to analyse the degree of self-similarity of light curves from 450 K- and M- dwarf stars.
-\item Estimated the ages of these stars using extracted rotation periods. 
-\item Automated the verification of periods extracted using the autocorrelation function.
-\item My research showed that the development of magnetic activity cycles for K- and M- dwarfs is in line with what is predicted in modern dynamo theory.
-\item Tech used: Python, numpy, scipy, pandas, matplotlib.
+\item Analysed and extracted stellar activity \& age in K- and M-dwarfs using autocorrelation and rotational modelling.
+\item Produced research aligning with modern dynamo theory; automated signal verification pipeline in Python.
+% \item Tech used: Python, numpy, scipy, pandas, matplotlib.
 \end{tightemize}
 \sectionsep
-
-
 \end{minipage} 
 \end{document}  \documentclass[]{article}
